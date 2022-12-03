@@ -85,6 +85,9 @@
             default() {
                 return {}
             }
+        },
+        navText: {
+          default: ['&#x27;next&#x27;','&#x27;prev&#x27;']
         }
       },
 
@@ -113,7 +116,8 @@
                 dots     : this.dots,
                 autoplayTimeout     : this.autoplayTimeout,
                 autoplayHoverPause     : this.autoplayHoverPause,
-                responsive     : this.responsive
+                responsive     : this.responsive,
+                navText: this.navText
             });
         },
         addListeners() {
